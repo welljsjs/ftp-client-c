@@ -1,0 +1,12 @@
+@startuml user-pass-auth
+Client <- Server : <b>220</b> Service ready <CRLF>.
+Client -> Server : <b>USER</b> Doe<CRLF>.
+Client <- Server : <b>331</b> User name ok, need password<CRLF>.
+Client -> Server  : <b>PASS</b> mumble<CRLF>.
+
+alt correct password
+  Client <- Server : <b>230</b> User logged in<CRLF>.
+else wrong password
+  Client <- Server : <b>530</b> Password rejected<CRLF>.
+end
+@enduml
