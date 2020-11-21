@@ -1,0 +1,12 @@
+#!/bin/sh
+
+date=$(date +%s)
+
+echo "Replacing occurences of <date=...>..."
+sed -E -i "" "s/<date=.+>/<date=${date}>/" README.md
+echo "Replaced all occurences of <date=...> in README.md."
+
+# Re-add all files.
+git add .
+
+exit 0
