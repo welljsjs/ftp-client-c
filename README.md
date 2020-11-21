@@ -2,6 +2,6 @@
 
 ### Simple, minimalistic FTP client following [RFC 959](docs/rfc959.pdf), written in C.
 
-![Authentication 01](https://www.plantuml.com/plantuml/proxy?cache=no&fmt=png&src=https://raw.githubusercontent.com/welljsjs/ftp-client-c/master/docs/userpass.puml)
+![Authentication](https://www.plantuml.com/plantuml/proxy?cache=no&fmt=png&src=https://raw.githubusercontent.com/welljsjs/ftp-client-c/master/docs/userpass.puml?sig=<date=1605971838>)
 
 Copyright (©) Julius Schmidt
