@@ -1,5 +1,12 @@
 #!/bin/sh
 
+#
+# This script is being used to invalidate GitHubs' image cache for the README.md.
+# Because the UML diagrams might change but this won't trigger a URL change
+# because the request is being proxied through PlantUMLs' proxies (thus the image url doesn't change),
+# we use the short script below to append a timestamp to the image URL. 
+#
+
 date=$(date +%s)
 
 echo "Replacing occurences of <date=...>..."
